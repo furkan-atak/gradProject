@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "freelancers",
+  "info": {
+    "name": "Freelancer"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}
