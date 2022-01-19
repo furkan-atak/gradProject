@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/freelancers",
+      "handler": "freelancers.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/freelancers/count",
+      "handler": "freelancers.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/freelancers/:id",
+      "handler": "freelancers.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/freelancers",
+      "handler": "freelancers.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/freelancers/:id",
+      "handler": "freelancers.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/freelancers/:id",
+      "handler": "freelancers.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "job_requests",
+  "info": {
+    "name": "JobRequests"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Id": {
+      "type": "integer"
+    }
+  }
+}
