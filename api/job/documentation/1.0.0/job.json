@@ -1,18 +1,18 @@
 {
   "paths": {
-    "/portfolios": {
+    "/jobs": {
       "get": {
         "deprecated": false,
-        "description": "Find all the portfolios's records",
+        "description": "",
         "responses": {
           "200": {
-            "description": "Retrieve portfolios document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Portfolios"
+                    "$ref": "#/components/schemas/Job"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Portfolios"
+          "Job"
         ],
         "parameters": [
           {
@@ -194,14 +194,14 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new portfolios record",
+        "description": "Create a new record",
         "responses": {
           "200": {
-            "description": "Retrieve portfolios document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Portfolios"
+                  "$ref": "#/components/schemas/Job"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Portfolios"
+          "Job"
         ],
         "requestBody": {
           "description": "",
@@ -247,20 +247,20 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewPortfolios"
+                "$ref": "#/components/schemas/NewJob"
               }
             }
           }
         }
       }
     },
-    "/portfolios/count": {
+    "/jobs/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the number of portfolios documents",
+        "description": "",
         "responses": {
           "200": {
-            "description": "Retrieve portfolios document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
@@ -306,22 +306,22 @@
         },
         "summary": "",
         "tags": [
-          "Portfolios"
+          "Job"
         ],
         "parameters": []
       }
     },
-    "/portfolios/{id}": {
+    "/jobs/{id}": {
       "get": {
         "deprecated": false,
-        "description": "Find one portfolios record",
+        "description": "",
         "responses": {
           "200": {
-            "description": "Retrieve portfolios document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Portfolios"
+                  "$ref": "#/components/schemas/Job"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Portfolios"
+          "Job"
         ],
         "parameters": [
           {
@@ -376,14 +376,14 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single portfolios record",
+        "description": "Update a record",
         "responses": {
           "200": {
-            "description": "Retrieve portfolios document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Portfolios"
+                  "$ref": "#/components/schemas/Job"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Portfolios"
+          "Job"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewPortfolios"
+                "$ref": "#/components/schemas/NewJob"
               }
             }
           }
@@ -449,10 +449,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single portfolios record",
+        "description": "Delete a record",
         "responses": {
           "200": {
-            "description": "deletes a single portfolios based on the ID supplied",
+            "description": "deletes a single record based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Portfolios"
+          "Job"
         ],
         "parameters": [
           {
@@ -514,7 +514,7 @@
   },
   "components": {
     "schemas": {
-      "Portfolios": {
+      "Job": {
         "required": [
           "id"
         ],
@@ -522,11 +522,154 @@
           "id": {
             "type": "string"
           },
-          "experience": {
-            "type": "integer"
-          },
-          "explanation": {
+          "Name": {
             "type": "string"
+          },
+          "categories": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "name"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "jobs": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "freelancers": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Id": {
+                  "type": "integer"
+                },
+                "job_offers": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "portfolio": {
+                  "type": "string"
+                },
+                "jobs": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "job_offer": {
+                  "type": "string"
+                },
+                "orders": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "job_offers": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Id": {
+                  "type": "integer"
+                },
+                "jobs": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "freelancer": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "job_requests": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Id": {
+                  "type": "integer"
+                },
+                "jobs": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
           },
           "published_at": {
             "type": "string",
@@ -534,13 +677,34 @@
           }
         }
       },
-      "NewPortfolios": {
+      "NewJob": {
         "properties": {
-          "experience": {
-            "type": "integer"
-          },
-          "explanation": {
+          "Name": {
             "type": "string"
+          },
+          "categories": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "freelancers": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "job_offers": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "job_requests": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",
@@ -558,7 +722,7 @@
   },
   "tags": [
     {
-      "name": "Portfolios"
+      "name": "Job"
     }
   ]
 }

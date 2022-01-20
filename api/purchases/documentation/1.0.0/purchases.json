@@ -522,8 +522,12 @@
           "id": {
             "type": "string"
           },
-          "Id": {
+          "price": {
             "type": "integer"
+          },
+          "purchaseDate": {
+            "type": "string",
+            "format": "date-time"
           },
           "published_at": {
             "type": "string",
@@ -533,8 +537,12 @@
       },
       "NewPurchases": {
         "properties": {
-          "Id": {
+          "price": {
             "type": "integer"
+          },
+          "purchaseDate": {
+            "type": "string",
+            "format": "date-time"
           },
           "published_at": {
             "type": "string",

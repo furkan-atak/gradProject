@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "favourites",
   "info": {
-    "name": "Favourites"
+    "name": "Favourites",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -13,6 +14,13 @@
   "attributes": {
     "Id": {
       "type": "integer"
+    },
+    "freelancers": {
+      "collection": "freelancers"
+    },
+    "users_permissions_users": {
+      "plugin": "users-permissions",
+      "collection": "user"
     }
   }
 }

@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jobs",
+  "info": {
+    "name": "Job",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "categories": {
+      "collection": "categories",
+      "via": "jobs",
+      "dominant": true
+    },
+    "freelancers": {
+      "collection": "freelancers",
+      "via": "jobs",
+      "dominant": true
+    },
+    "job_offers": {
+      "via": "jobs",
+      "collection": "job-offers",
+      "dominant": true
+    },
+    "job_requests": {
+      "collection": "job-requests",
+      "via": "jobs",
+      "dominant": true
+    }
+  }
+}

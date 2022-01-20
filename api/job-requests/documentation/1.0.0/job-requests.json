@@ -538,6 +538,55 @@
           "Id": {
             "type": "integer"
           },
+          "jobs": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Name": {
+                  "type": "string"
+                },
+                "categories": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "freelancers": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "job_offers": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "job_requests": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -548,6 +597,12 @@
         "properties": {
           "Id": {
             "type": "integer"
+          },
+          "jobs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",

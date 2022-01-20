@@ -13,6 +13,10 @@
   "attributes": {
     "Id": {
       "type": "integer"
+    },
+    "jobs": {
+      "via": "job_requests",
+      "collection": "job"
     }
   }
 }

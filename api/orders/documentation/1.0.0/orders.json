@@ -522,8 +522,57 @@
           "id": {
             "type": "string"
           },
-          "Id": {
-            "type": "integer"
+          "name": {
+            "type": "string"
+          },
+          "freelancers": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Id": {
+                  "type": "integer"
+                },
+                "job_offers": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "portfolio": {
+                  "type": "string"
+                },
+                "jobs": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "job_offer": {
+                  "type": "string"
+                },
+                "orders": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
           },
           "published_at": {
             "type": "string",
@@ -533,8 +582,14 @@
       },
       "NewOrders": {
         "properties": {
-          "Id": {
-            "type": "integer"
+          "name": {
+            "type": "string"
+          },
+          "freelancers": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",

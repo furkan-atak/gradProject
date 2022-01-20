@@ -561,6 +561,30 @@
                 "role": {
                   "type": "string"
                 },
+                "favourites": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "purchases": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "job_requests": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "messages": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
                 "created_by": {
                   "type": "string"
                 },
