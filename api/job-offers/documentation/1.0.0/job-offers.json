@@ -589,7 +589,9 @@
           },
           "freelancer": {
             "required": [
-              "id"
+              "id",
+              "name",
+              "surname"
             ],
             "properties": {
               "id": {
@@ -621,6 +623,24 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "name": {
+                "type": "string"
+              },
+              "surname": {
+                "type": "string"
+              },
+              "explanation": {
+                "type": "string"
+              },
+              "starPoint": {
+                "type": "number"
+              },
+              "fee": {
+                "type": "number"
+              },
+              "country": {
+                "type": "string"
               },
               "published_at": {
                 "type": "string"

@@ -20,8 +20,8 @@
       "collection": "job"
     },
     "freelancer": {
-      "model": "freelancers",
-      "via": "job_offer"
+      "via": "job_offer",
+      "model": "freelancers"
     }
   }
 }

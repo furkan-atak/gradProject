@@ -16,13 +16,13 @@
       "type": "string"
     },
     "categories": {
-      "collection": "categories",
       "via": "jobs",
+      "collection": "categories",
       "dominant": true
     },
     "freelancers": {
-      "collection": "freelancers",
       "via": "jobs",
+      "collection": "freelancers",
       "dominant": true
     },
     "job_offers": {

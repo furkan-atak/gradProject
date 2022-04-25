@@ -516,7 +516,9 @@
     "schemas": {
       "Freelancers": {
         "required": [
-          "id"
+          "id",
+          "name",
+          "surname"
         ],
         "properties": {
           "id": {
@@ -695,6 +697,24 @@
               }
             }
           },
+          "name": {
+            "type": "string"
+          },
+          "surname": {
+            "type": "string"
+          },
+          "explanation": {
+            "type": "string"
+          },
+          "starPoint": {
+            "type": "number"
+          },
+          "fee": {
+            "type": "number"
+          },
+          "country": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -702,6 +722,10 @@
         }
       },
       "NewFreelancers": {
+        "required": [
+          "name",
+          "surname"
+        ],
         "properties": {
           "Id": {
             "type": "integer"
@@ -729,6 +753,24 @@
             "items": {
               "type": "string"
             }
+          },
+          "name": {
+            "type": "string"
+          },
+          "surname": {
+            "type": "string"
+          },
+          "explanation": {
+            "type": "string"
+          },
+          "starPoint": {
+            "type": "number"
+          },
+          "fee": {
+            "type": "number"
+          },
+          "country": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

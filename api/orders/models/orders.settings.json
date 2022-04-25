@@ -16,8 +16,8 @@
       "type": "string"
     },
     "freelancers": {
-      "collection": "freelancers",
       "via": "orders",
+      "collection": "freelancers",
       "dominant": true
     }
   }
