@@ -715,6 +715,9 @@
           "country": {
             "type": "string"
           },
+          "image_url": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -770,6 +773,9 @@
             "type": "number"
           },
           "country": {
+            "type": "string"
+          },
+          "image_url": {
             "type": "string"
           },
           "published_at": {

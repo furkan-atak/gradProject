@@ -614,6 +614,9 @@
                 "country": {
                   "type": "string"
                 },
+                "image_url": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
