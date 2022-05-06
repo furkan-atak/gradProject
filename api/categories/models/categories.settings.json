@@ -19,6 +19,10 @@
     "jobs": {
       "via": "categories",
       "collection": "job"
+    },
+    "group": {
+      "via": "categories",
+      "model": "groups"
     }
   }
 }

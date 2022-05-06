@@ -545,6 +545,9 @@
                     "type": "string"
                   }
                 },
+                "group": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
