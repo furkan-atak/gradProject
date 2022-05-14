@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "name": "Projects",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "header": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "category": {
+      "model": "categories"
+    },
+    "group": {
+      "model": "groups"
+    },
+    "BudgetType": {
+      "type": "string",
+      "required": true
+    },
+    "Currency": {
+      "type": "string",
+      "required": true
+    },
+    "Budget": {
+      "type": "decimal",
+      "required": true
+    },
+    "EstimatedDuration": {
+      "type": "string"
+    },
+    "user": {
+      "plugin": "admin",
+      "model": "user"
+    },
+    "freelancer": {
+      "model": "freelancers"
+    }
+  }
+}
