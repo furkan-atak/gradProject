@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "05/12/2022 10:43:39 PM"
+    "x-generation-date": "05/17/2022 11:39:39 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -8521,6 +8521,81 @@
               }
             }
           },
+          "freelancers": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "name",
+                "surname"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Id": {
+                  "type": "integer"
+                },
+                "job_offers": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "portfolio": {
+                  "type": "string"
+                },
+                "jobs": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "job_offer": {
+                  "type": "string"
+                },
+                "orders": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "name": {
+                  "type": "string"
+                },
+                "surname": {
+                  "type": "string"
+                },
+                "explanation": {
+                  "type": "string"
+                },
+                "starPoint": {
+                  "type": "number"
+                },
+                "fee": {
+                  "type": "number"
+                },
+                "country": {
+                  "type": "string"
+                },
+                "image_url": {
+                  "type": "string"
+                },
+                "category": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -8543,6 +8618,12 @@
           },
           "group": {
             "type": "string"
+          },
+          "freelancers": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",
@@ -8625,6 +8706,9 @@
                   "type": "string"
                 },
                 "image_url": {
+                  "type": "string"
+                },
+                "category": {
                   "type": "string"
                 },
                 "published_at": {
@@ -8950,6 +9034,44 @@
           "image_url": {
             "type": "string"
           },
+          "category": {
+            "required": [
+              "id",
+              "name"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "jobs": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "group": {
+                "type": "string"
+              },
+              "freelancers": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -9010,6 +9132,9 @@
           "image_url": {
             "type": "string"
           },
+          "category": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -9055,6 +9180,12 @@
                 },
                 "group": {
                   "type": "string"
+                },
+                "freelancers": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "published_at": {
                   "type": "string"
@@ -9213,6 +9344,9 @@
                 "type": "string"
               },
               "image_url": {
+                "type": "string"
+              },
+              "category": {
                 "type": "string"
               },
               "published_at": {
@@ -9381,6 +9515,12 @@
                 "group": {
                   "type": "string"
                 },
+                "freelancers": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -9451,6 +9591,9 @@
                   "type": "string"
                 },
                 "image_url": {
+                  "type": "string"
+                },
+                "category": {
                   "type": "string"
                 },
                 "published_at": {
@@ -9760,6 +9903,9 @@
                 "image_url": {
                   "type": "string"
                 },
+                "category": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -9880,6 +10026,12 @@
               },
               "group": {
                 "type": "string"
+              },
+              "freelancers": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               },
               "published_at": {
                 "type": "string"
@@ -10035,6 +10187,9 @@
                 "type": "string"
               },
               "image_url": {
+                "type": "string"
+              },
+              "category": {
                 "type": "string"
               },
               "published_at": {

@@ -23,6 +23,10 @@
     "group": {
       "via": "categories",
       "model": "groups"
+    },
+    "freelancers": {
+      "via": "category",
+      "collection": "freelancers"
     }
   }
 }

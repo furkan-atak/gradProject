@@ -548,6 +548,12 @@
                 "group": {
                   "type": "string"
                 },
+                "freelancers": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
                 "published_at": {
                   "type": "string"
                 },
