@@ -621,6 +621,12 @@
                 "userId": {
                   "type": "string"
                 },
+                "offers": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -664,6 +670,56 @@
               }
             }
           },
+          "offers": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "offerHeader"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "offerHeader": {
+                  "type": "string"
+                },
+                "offerDetails": {
+                  "type": "string"
+                },
+                "fee": {
+                  "type": "number"
+                },
+                "currency": {
+                  "type": "integer"
+                },
+                "duration": {
+                  "type": "integer"
+                },
+                "category": {
+                  "type": "string"
+                },
+                "freelancer": {
+                  "type": "string"
+                },
+                "jobs": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -688,6 +744,12 @@
             }
           },
           "job_requests": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "offers": {
             "type": "array",
             "items": {
               "type": "string"

@@ -29,6 +29,10 @@
       "collection": "job-requests",
       "via": "jobs",
       "dominant": true
+    },
+    "offers": {
+      "via": "jobs",
+      "collection": "offers"
     }
   }
 }

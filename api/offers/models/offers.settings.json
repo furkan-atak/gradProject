@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "offers",
+  "info": {
+    "name": "Offers"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "offerHeader": {
+      "type": "string",
+      "required": true
+    },
+    "offerDetails": {
+      "type": "string"
+    },
+    "fee": {
+      "type": "decimal"
+    },
+    "currency": {
+      "type": "integer"
+    },
+    "duration": {
+      "type": "integer"
+    },
+    "category": {
+      "model": "categories"
+    },
+    "freelancer": {
+      "model": "freelancers",
+      "via": "offers"
+    },
+    "jobs": {
+      "collection": "job",
+      "via": "offers",
+      "dominant": true
+    }
+  }
+}

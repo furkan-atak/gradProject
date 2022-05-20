@@ -1,19 +1,18 @@
 {
   "paths": {
-    "/job-requests": {
+    "/offers": {
       "get": {
         "deprecated": false,
-        "description": "Find all the job-requests's records",
+        "description": "Find all the offers's records",
         "responses": {
           "200": {
-            "description": "Retrieve job-requests document(s)",
+            "description": "Retrieve offers document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Offers"
                   }
                 }
               }
@@ -52,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Job-requests"
+          "Offers"
         ],
         "parameters": [
           {
@@ -195,18 +194,14 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new job-requests record",
+        "description": "Create a new offers record",
         "responses": {
           "200": {
-            "description": "Retrieve job-requests document(s)",
+            "description": "Retrieve offers document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
+                  "$ref": "#/components/schemas/Offers"
                 }
               }
             }
@@ -244,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Job-requests"
+          "Offers"
         ],
         "requestBody": {
           "description": "",
@@ -252,26 +247,26 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewJob-requests"
+                "$ref": "#/components/schemas/NewOffers"
               }
             }
           }
         }
       }
     },
-    "/job-requests/count": {
+    "/offers/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the number of job-requests documents",
+        "description": "Retrieve the number of offers documents",
         "responses": {
           "200": {
-            "description": "Retrieve job-requests document(s)",
+            "description": "Retrieve offers document(s)",
             "content": {
               "application/json": {
                 "schema": {
                   "properties": {
-                    "foo": {
-                      "type": "string"
+                    "count": {
+                      "type": "integer"
                     }
                   }
                 }
@@ -311,26 +306,22 @@
         },
         "summary": "",
         "tags": [
-          "Job-requests"
+          "Offers"
         ],
         "parameters": []
       }
     },
-    "/job-requests/{id}": {
+    "/offers/{id}": {
       "get": {
         "deprecated": false,
-        "description": "Find one job-requests record",
+        "description": "Find one offers record",
         "responses": {
           "200": {
-            "description": "Retrieve job-requests document(s)",
+            "description": "Retrieve offers document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
+                  "$ref": "#/components/schemas/Offers"
                 }
               }
             }
@@ -368,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Job-requests"
+          "Offers"
         ],
         "parameters": [
           {
@@ -385,18 +376,14 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single job-requests record",
+        "description": "Update a single offers record",
         "responses": {
           "200": {
-            "description": "Retrieve job-requests document(s)",
+            "description": "Retrieve offers document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
+                  "$ref": "#/components/schemas/Offers"
                 }
               }
             }
@@ -434,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Job-requests"
+          "Offers"
         ],
         "requestBody": {
           "description": "",
@@ -442,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewJob-requests"
+                "$ref": "#/components/schemas/NewOffers"
               }
             }
           }
@@ -462,10 +449,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single job-requests record",
+        "description": "Delete a single offers record",
         "responses": {
           "200": {
-            "description": "deletes a single job-requests based on the ID supplied",
+            "description": "deletes a single offers based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -508,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Job-requests"
+          "Offers"
         ],
         "parameters": [
           {
@@ -527,16 +514,137 @@
   },
   "components": {
     "schemas": {
-      "Job-requests": {
+      "Offers": {
         "required": [
-          "id"
+          "id",
+          "offerHeader"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "Id": {
+          "offerHeader": {
+            "type": "string"
+          },
+          "offerDetails": {
+            "type": "string"
+          },
+          "fee": {
+            "type": "number"
+          },
+          "currency": {
             "type": "integer"
+          },
+          "duration": {
+            "type": "integer"
+          },
+          "category": {
+            "required": [
+              "id",
+              "name"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "jobs": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "group": {
+                "type": "string"
+              },
+              "freelancers": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "freelancer": {
+            "required": [
+              "id",
+              "name",
+              "surname",
+              "userId"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "portfolio": {
+                "type": "string"
+              },
+              "jobs": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "orders": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "name": {
+                "type": "string"
+              },
+              "surname": {
+                "type": "string"
+              },
+              "explanation": {
+                "type": "string"
+              },
+              "starPoint": {
+                "type": "number"
+              },
+              "fee": {
+                "type": "number"
+              },
+              "country": {
+                "type": "string"
+              },
+              "image_url": {
+                "type": "string"
+              },
+              "category": {
+                "type": "string"
+              },
+              "userId": {
+                "type": "string"
+              },
+              "offers": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           },
           "jobs": {
             "type": "array",
@@ -593,10 +701,31 @@
           }
         }
       },
-      "NewJob-requests": {
+      "NewOffers": {
+        "required": [
+          "offerHeader"
+        ],
         "properties": {
-          "Id": {
+          "offerHeader": {
+            "type": "string"
+          },
+          "offerDetails": {
+            "type": "string"
+          },
+          "fee": {
+            "type": "number"
+          },
+          "currency": {
             "type": "integer"
+          },
+          "duration": {
+            "type": "integer"
+          },
+          "category": {
+            "type": "string"
+          },
+          "freelancer": {
+            "type": "string"
           },
           "jobs": {
             "type": "array",
@@ -618,5 +747,9 @@
       }
     }
   },
-  "tags": []
+  "tags": [
+    {
+      "name": "Offers"
+    }
+  ]
 }

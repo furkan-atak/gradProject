@@ -55,6 +55,10 @@
       "type": "string",
       "required": true,
       "unique": true
+    },
+    "offers": {
+      "via": "freelancer",
+      "collection": "offers"
     }
   }
 }
