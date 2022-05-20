@@ -12,22 +12,12 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Id": {
-      "type": "integer"
-    },
-    "job_offers": {
-      "collection": "job-offers"
-    },
     "portfolio": {
       "model": "portfolios"
     },
     "jobs": {
       "via": "freelancers",
       "collection": "job"
-    },
-    "job_offer": {
-      "via": "freelancer",
-      "model": "job-offers"
     },
     "orders": {
       "via": "freelancers",
@@ -60,6 +50,15 @@
     "category": {
       "model": "categories",
       "via": "freelancers"
+    },
+    "userId": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "offers": {
+      "via": "freelancer",
+      "collection": "job-offers"
     }
   }
 }

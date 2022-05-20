@@ -662,20 +662,12 @@
             "required": [
               "id",
               "name",
-              "surname"
+              "surname",
+              "userId"
             ],
             "properties": {
               "id": {
                 "type": "string"
-              },
-              "Id": {
-                "type": "integer"
-              },
-              "job_offers": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
               },
               "portfolio": {
                 "type": "string"
@@ -685,9 +677,6 @@
                 "items": {
                   "type": "string"
                 }
-              },
-              "job_offer": {
-                "type": "string"
               },
               "orders": {
                 "type": "array",
@@ -718,6 +707,15 @@
               },
               "category": {
                 "type": "string"
+              },
+              "userId": {
+                "type": "string"
+              },
+              "offers": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               },
               "published_at": {
                 "type": "string"

@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "job_offers",
   "info": {
-    "name": "JobOffers",
+    "name": "Offers",
     "description": ""
   },
   "options": {
@@ -20,8 +20,26 @@
       "collection": "job"
     },
     "freelancer": {
-      "via": "job_offer",
+      "via": "offers",
       "model": "freelancers"
+    },
+    "offerHeader": {
+      "type": "string"
+    },
+    "fee": {
+      "type": "decimal"
+    },
+    "currency": {
+      "type": "integer"
+    },
+    "category": {
+      "model": "categories"
+    },
+    "offerDetails": {
+      "type": "string"
+    },
+    "duration": {
+      "type": "string"
     }
   }
 }

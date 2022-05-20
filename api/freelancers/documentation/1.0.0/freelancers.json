@@ -518,48 +518,12 @@
         "required": [
           "id",
           "name",
-          "surname"
+          "surname",
+          "userId"
         ],
         "properties": {
           "id": {
             "type": "string"
-          },
-          "Id": {
-            "type": "integer"
-          },
-          "job_offers": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "Id": {
-                  "type": "integer"
-                },
-                "jobs": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "freelancer": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
           },
           "portfolio": {
             "required": [
@@ -632,37 +596,6 @@
                 "updated_by": {
                   "type": "string"
                 }
-              }
-            }
-          },
-          "job_offer": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "Id": {
-                "type": "integer"
-              },
-              "jobs": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "freelancer": {
-                "type": "string"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
               }
             }
           },
@@ -756,6 +689,61 @@
               }
             }
           },
+          "userId": {
+            "type": "string"
+          },
+          "offers": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Id": {
+                  "type": "integer"
+                },
+                "jobs": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "freelancer": {
+                  "type": "string"
+                },
+                "offerHeader": {
+                  "type": "string"
+                },
+                "fee": {
+                  "type": "number"
+                },
+                "currency": {
+                  "type": "integer"
+                },
+                "category": {
+                  "type": "string"
+                },
+                "offerDetails": {
+                  "type": "string"
+                },
+                "duration": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -765,18 +753,10 @@
       "NewFreelancers": {
         "required": [
           "name",
-          "surname"
+          "surname",
+          "userId"
         ],
         "properties": {
-          "Id": {
-            "type": "integer"
-          },
-          "job_offers": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
           "portfolio": {
             "type": "string"
           },
@@ -785,9 +765,6 @@
             "items": {
               "type": "string"
             }
-          },
-          "job_offer": {
-            "type": "string"
           },
           "orders": {
             "type": "array",
@@ -818,6 +795,15 @@
           },
           "category": {
             "type": "string"
+          },
+          "userId": {
+            "type": "string"
+          },
+          "offers": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",
