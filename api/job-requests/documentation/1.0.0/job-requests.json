@@ -563,12 +563,6 @@
                     "type": "string"
                   }
                 },
-                "job_offers": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
                 "job_requests": {
                   "type": "array",
                   "items": {

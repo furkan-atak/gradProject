@@ -621,64 +621,6 @@
                 "userId": {
                   "type": "string"
                 },
-                "offers": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "job_offers": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "Id": {
-                  "type": "integer"
-                },
-                "jobs": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "freelancer": {
-                  "type": "string"
-                },
-                "offerHeader": {
-                  "type": "string"
-                },
-                "fee": {
-                  "type": "number"
-                },
-                "currency": {
-                  "type": "integer"
-                },
-                "category": {
-                  "type": "string"
-                },
-                "offerDetails": {
-                  "type": "string"
-                },
-                "duration": {
-                  "type": "string"
-                },
                 "published_at": {
                   "type": "string"
                 },
@@ -740,12 +682,6 @@
             }
           },
           "freelancers": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "job_offers": {
             "type": "array",
             "items": {
               "type": "string"

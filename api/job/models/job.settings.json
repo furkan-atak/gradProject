@@ -25,11 +25,6 @@
       "collection": "freelancers",
       "dominant": true
     },
-    "job_offers": {
-      "via": "jobs",
-      "collection": "job-offers",
-      "dominant": true
-    },
     "job_requests": {
       "collection": "job-requests",
       "via": "jobs",

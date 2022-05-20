@@ -551,12 +551,6 @@
                     "type": "string"
                   }
                 },
-                "job_offers": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
                 "job_requests": {
                   "type": "array",
                   "items": {
@@ -657,12 +651,6 @@
                 },
                 "userId": {
                   "type": "string"
-                },
-                "offers": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
                 },
                 "published_at": {
                   "type": "string"

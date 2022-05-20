@@ -580,12 +580,6 @@
                 "userId": {
                   "type": "string"
                 },
-                "offers": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
                 "published_at": {
                   "type": "string"
                 },
