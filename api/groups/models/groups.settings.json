@@ -16,8 +16,8 @@
       "type": "string"
     },
     "categories": {
-      "collection": "categories",
-      "via": "group"
+      "via": "group",
+      "collection": "categories"
     }
   }
 }

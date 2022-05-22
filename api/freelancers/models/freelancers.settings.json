@@ -48,8 +48,8 @@
       "type": "string"
     },
     "category": {
-      "model": "categories",
-      "via": "freelancers"
+      "via": "freelancers",
+      "model": "categories"
     },
     "userId": {
       "type": "string",
