@@ -588,7 +588,7 @@
                     "type": "string"
                   }
                 },
-                "userImg": {
+                "imageUrl": {
                   "type": "string"
                 },
                 "created_by": {

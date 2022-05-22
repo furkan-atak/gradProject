@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "05/21/2022 11:21:00 AM"
+    "x-generation-date": "05/22/2022 3:17:05 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -8581,6 +8581,9 @@
               }
             }
           },
+          "subHeader": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -8609,6 +8612,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "subHeader": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -8769,7 +8775,7 @@
                     "type": "string"
                   }
                 },
-                "userImg": {
+                "imageUrl": {
                   "type": "string"
                 },
                 "created_by": {
@@ -8980,6 +8986,9 @@
                   "type": "string"
                 }
               },
+              "subHeader": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -9157,6 +9166,9 @@
                     "type": "string"
                   }
                 },
+                "subHeader": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -9326,6 +9338,9 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "subHeader": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"
@@ -9614,7 +9629,7 @@
                     "type": "string"
                   }
                 },
-                "userImg": {
+                "imageUrl": {
                   "type": "string"
                 },
                 "created_by": {
@@ -9705,6 +9720,9 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "subHeader": {
+                "type": "string"
               },
               "published_at": {
                 "type": "string"
@@ -10084,6 +10102,9 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "subHeader": {
+                "type": "string"
               },
               "published_at": {
                 "type": "string"
@@ -10475,7 +10496,7 @@
                     "type": "string"
                   }
                 },
-                "userImg": {
+                "imageUrl": {
                   "type": "string"
                 },
                 "created_by": {
@@ -10718,72 +10739,8 @@
               }
             }
           },
-          "userImg": {
-            "required": [
-              "id",
-              "name",
-              "hash",
-              "mime",
-              "size",
-              "url",
-              "provider"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "alternativeText": {
-                "type": "string"
-              },
-              "caption": {
-                "type": "string"
-              },
-              "width": {
-                "type": "integer"
-              },
-              "height": {
-                "type": "integer"
-              },
-              "formats": {
-                "type": "object"
-              },
-              "hash": {
-                "type": "string"
-              },
-              "ext": {
-                "type": "string"
-              },
-              "mime": {
-                "type": "string"
-              },
-              "size": {
-                "type": "number"
-              },
-              "url": {
-                "type": "string"
-              },
-              "previewUrl": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "provider_metadata": {
-                "type": "object"
-              },
-              "related": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
+          "imageUrl": {
+            "type": "string"
           }
         }
       },
@@ -10849,6 +10806,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "imageUrl": {
+            "type": "string"
           },
           "created_by": {
             "type": "string"

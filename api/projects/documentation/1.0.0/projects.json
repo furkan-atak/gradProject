@@ -560,6 +560,9 @@
                   "type": "string"
                 }
               },
+              "subHeader": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },
