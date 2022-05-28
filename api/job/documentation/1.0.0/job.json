@@ -711,6 +711,9 @@
                     "type": "string"
                   }
                 },
+                "imgUrl": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
