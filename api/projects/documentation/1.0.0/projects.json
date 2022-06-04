@@ -519,8 +519,6 @@
           "id",
           "header",
           "description",
-          "BudgetType",
-          "Currency",
           "Budget"
         ],
         "properties": {
@@ -601,12 +599,6 @@
                 "type": "string"
               }
             }
-          },
-          "BudgetType": {
-            "type": "string"
-          },
-          "Currency": {
-            "type": "string"
           },
           "Budget": {
             "type": "number"
@@ -731,6 +723,12 @@
               }
             }
           },
+          "BudgetType": {
+            "type": "integer"
+          },
+          "Currency": {
+            "type": "integer"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -741,8 +739,6 @@
         "required": [
           "header",
           "description",
-          "BudgetType",
-          "Currency",
           "Budget"
         ],
         "properties": {
@@ -758,12 +754,6 @@
           "group": {
             "type": "string"
           },
-          "BudgetType": {
-            "type": "string"
-          },
-          "Currency": {
-            "type": "string"
-          },
           "Budget": {
             "type": "number"
           },
@@ -775,6 +765,12 @@
           },
           "freelancer": {
             "type": "string"
+          },
+          "BudgetType": {
+            "type": "integer"
+          },
+          "Currency": {
+            "type": "integer"
           },
           "published_at": {
             "type": "string",

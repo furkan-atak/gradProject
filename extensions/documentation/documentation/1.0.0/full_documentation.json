@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "05/25/2022 9:39:57 AM"
+    "x-generation-date": "06/04/2022 3:39:18 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -10074,8 +10074,6 @@
           "id",
           "header",
           "description",
-          "BudgetType",
-          "Currency",
           "Budget"
         ],
         "properties": {
@@ -10156,12 +10154,6 @@
                 "type": "string"
               }
             }
-          },
-          "BudgetType": {
-            "type": "string"
-          },
-          "Currency": {
-            "type": "string"
           },
           "Budget": {
             "type": "number"
@@ -10286,6 +10278,12 @@
               }
             }
           },
+          "BudgetType": {
+            "type": "integer"
+          },
+          "Currency": {
+            "type": "integer"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -10296,8 +10294,6 @@
         "required": [
           "header",
           "description",
-          "BudgetType",
-          "Currency",
           "Budget"
         ],
         "properties": {
@@ -10313,12 +10309,6 @@
           "group": {
             "type": "string"
           },
-          "BudgetType": {
-            "type": "string"
-          },
-          "Currency": {
-            "type": "string"
-          },
           "Budget": {
             "type": "number"
           },
@@ -10330,6 +10320,12 @@
           },
           "freelancer": {
             "type": "string"
+          },
+          "BudgetType": {
+            "type": "integer"
+          },
+          "Currency": {
+            "type": "integer"
           },
           "published_at": {
             "type": "string",

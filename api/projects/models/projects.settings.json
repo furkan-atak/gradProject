@@ -26,14 +26,6 @@
     "group": {
       "model": "groups"
     },
-    "BudgetType": {
-      "type": "string",
-      "required": true
-    },
-    "Currency": {
-      "type": "string",
-      "required": true
-    },
     "Budget": {
       "type": "decimal",
       "required": true
@@ -47,6 +39,12 @@
     },
     "freelancer": {
       "model": "freelancers"
+    },
+    "BudgetType": {
+      "type": "integer"
+    },
+    "Currency": {
+      "type": "integer"
     }
   }
 }
