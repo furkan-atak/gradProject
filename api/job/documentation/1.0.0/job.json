@@ -557,6 +557,12 @@
                 "subHeader": {
                   "type": "string"
                 },
+                "image_Url": {
+                  "type": "string"
+                },
+                "Description": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },

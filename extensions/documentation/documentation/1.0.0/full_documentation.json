@@ -14,7 +14,11 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
+<<<<<<< HEAD
     "x-generation-date": "06/04/2022 9:35:21 PM"
+=======
+    "x-generation-date": "06/05/2022 6:10:29 PM"
+>>>>>>> bdea9fe6f574bf0ffa78c44510f259232b52e6eb
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -8590,6 +8594,12 @@
           "subHeader": {
             "type": "string"
           },
+          "image_Url": {
+            "type": "string"
+          },
+          "Description": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -8620,6 +8630,12 @@
             }
           },
           "subHeader": {
+            "type": "string"
+          },
+          "image_Url": {
+            "type": "string"
+          },
+          "Description": {
             "type": "string"
           },
           "published_at": {
@@ -9001,6 +9017,12 @@
               "subHeader": {
                 "type": "string"
               },
+              "image_Url": {
+                "type": "string"
+              },
+              "Description": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -9251,6 +9273,12 @@
                 "subHeader": {
                   "type": "string"
                 },
+                "image_Url": {
+                  "type": "string"
+                },
+                "Description": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -9422,6 +9450,12 @@
                   }
                 },
                 "subHeader": {
+                  "type": "string"
+                },
+                "image_Url": {
+                  "type": "string"
+                },
+                "Description": {
                   "type": "string"
                 },
                 "published_at": {
@@ -9813,6 +9847,12 @@
                 }
               },
               "subHeader": {
+                "type": "string"
+              },
+              "image_Url": {
+                "type": "string"
+              },
+              "Description": {
                 "type": "string"
               },
               "published_at": {
@@ -10211,6 +10251,12 @@
                 }
               },
               "subHeader": {
+                "type": "string"
+              },
+              "image_Url": {
+                "type": "string"
+              },
+              "Description": {
                 "type": "string"
               },
               "published_at": {
