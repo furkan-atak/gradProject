@@ -45,6 +45,11 @@
     },
     "Currency": {
       "type": "integer"
+    },
+    "proposals": {
+      "collection": "freelancers",
+      "via": "sendedProposals",
+      "dominant": true
     }
   }
 }

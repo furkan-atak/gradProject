@@ -59,6 +59,10 @@
     "offers": {
       "via": "freelancer",
       "collection": "offers"
+    },
+    "sendedProposals": {
+      "via": "proposals",
+      "collection": "projects"
     }
   }
 }

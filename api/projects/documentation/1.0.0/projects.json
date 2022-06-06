@@ -712,6 +712,12 @@
                   "type": "string"
                 }
               },
+              "sendedProposals": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
               "published_at": {
                 "type": "string"
               },
@@ -728,6 +734,85 @@
           },
           "Currency": {
             "type": "integer"
+          },
+          "proposals": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "name",
+                "surname",
+                "userId"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "portfolio": {
+                  "type": "string"
+                },
+                "jobs": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "orders": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "name": {
+                  "type": "string"
+                },
+                "surname": {
+                  "type": "string"
+                },
+                "explanation": {
+                  "type": "string"
+                },
+                "starPoint": {
+                  "type": "number"
+                },
+                "fee": {
+                  "type": "number"
+                },
+                "country": {
+                  "type": "string"
+                },
+                "image_url": {
+                  "type": "string"
+                },
+                "category": {
+                  "type": "string"
+                },
+                "userId": {
+                  "type": "string"
+                },
+                "offers": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "sendedProposals": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
           },
           "published_at": {
             "type": "string",
@@ -771,6 +856,12 @@
           },
           "Currency": {
             "type": "integer"
+          },
+          "proposals": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",

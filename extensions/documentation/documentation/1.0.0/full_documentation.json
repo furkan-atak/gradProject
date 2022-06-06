@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "06/04/2022 3:39:18 PM"
+    "x-generation-date": "06/04/2022 9:35:21 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -8569,6 +8569,12 @@
                     "type": "string"
                   }
                 },
+                "sendedProposals": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -8695,6 +8701,12 @@
                   "type": "string"
                 },
                 "offers": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "sendedProposals": {
                   "type": "array",
                   "items": {
                     "type": "string"
@@ -9056,6 +9068,67 @@
               }
             }
           },
+          "sendedProposals": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "header",
+                "description",
+                "Budget"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "header": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "category": {
+                  "type": "string"
+                },
+                "group": {
+                  "type": "string"
+                },
+                "Budget": {
+                  "type": "number"
+                },
+                "EstimatedDuration": {
+                  "type": "string"
+                },
+                "user": {
+                  "type": "string"
+                },
+                "freelancer": {
+                  "type": "string"
+                },
+                "BudgetType": {
+                  "type": "integer"
+                },
+                "Currency": {
+                  "type": "integer"
+                },
+                "proposals": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -9112,6 +9185,12 @@
             "type": "string"
           },
           "offers": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "sendedProposals": {
             "type": "array",
             "items": {
               "type": "string"
@@ -9413,6 +9492,12 @@
                   "type": "string"
                 },
                 "offers": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "sendedProposals": {
                   "type": "array",
                   "items": {
                     "type": "string"
@@ -9800,6 +9885,12 @@
                   "type": "string"
                 }
               },
+              "sendedProposals": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
               "published_at": {
                 "type": "string"
               },
@@ -9983,6 +10074,12 @@
                   "type": "string"
                 },
                 "offers": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "sendedProposals": {
                   "type": "array",
                   "items": {
                     "type": "string"
@@ -10267,6 +10364,12 @@
                   "type": "string"
                 }
               },
+              "sendedProposals": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
               "published_at": {
                 "type": "string"
               },
@@ -10283,6 +10386,85 @@
           },
           "Currency": {
             "type": "integer"
+          },
+          "proposals": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "name",
+                "surname",
+                "userId"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "portfolio": {
+                  "type": "string"
+                },
+                "jobs": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "orders": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "name": {
+                  "type": "string"
+                },
+                "surname": {
+                  "type": "string"
+                },
+                "explanation": {
+                  "type": "string"
+                },
+                "starPoint": {
+                  "type": "number"
+                },
+                "fee": {
+                  "type": "number"
+                },
+                "country": {
+                  "type": "string"
+                },
+                "image_url": {
+                  "type": "string"
+                },
+                "category": {
+                  "type": "string"
+                },
+                "userId": {
+                  "type": "string"
+                },
+                "offers": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "sendedProposals": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
           },
           "published_at": {
             "type": "string",
@@ -10326,6 +10508,12 @@
           },
           "Currency": {
             "type": "integer"
+          },
+          "proposals": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",

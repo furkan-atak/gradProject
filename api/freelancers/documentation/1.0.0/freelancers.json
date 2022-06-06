@@ -748,6 +748,67 @@
               }
             }
           },
+          "sendedProposals": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "header",
+                "description",
+                "Budget"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "header": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "category": {
+                  "type": "string"
+                },
+                "group": {
+                  "type": "string"
+                },
+                "Budget": {
+                  "type": "number"
+                },
+                "EstimatedDuration": {
+                  "type": "string"
+                },
+                "user": {
+                  "type": "string"
+                },
+                "freelancer": {
+                  "type": "string"
+                },
+                "BudgetType": {
+                  "type": "integer"
+                },
+                "Currency": {
+                  "type": "integer"
+                },
+                "proposals": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -804,6 +865,12 @@
             "type": "string"
           },
           "offers": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "sendedProposals": {
             "type": "array",
             "items": {
               "type": "string"
