@@ -612,19 +612,14 @@
           "EstimatedDuration": {
             "type": "string"
           },
-          "user": {
+          "owner": {
             "required": [
               "id",
+              "username",
               "email"
             ],
             "properties": {
               "id": {
-                "type": "string"
-              },
-              "firstname": {
-                "type": "string"
-              },
-              "lastname": {
                 "type": "string"
               },
               "username": {
@@ -633,28 +628,58 @@
               "email": {
                 "type": "string"
               },
+              "provider": {
+                "type": "string"
+              },
               "password": {
                 "type": "string"
               },
               "resetPasswordToken": {
                 "type": "string"
               },
-              "registrationToken": {
+              "confirmationToken": {
                 "type": "string"
               },
-              "isActive": {
+              "confirmed": {
                 "type": "boolean"
               },
-              "roles": {
+              "blocked": {
+                "type": "boolean"
+              },
+              "role": {
+                "type": "string"
+              },
+              "favourites": {
                 "type": "array",
                 "items": {
                   "type": "string"
                 }
               },
-              "blocked": {
-                "type": "boolean"
+              "purchases": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               },
-              "preferedLanguage": {
+              "job_requests": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "messages": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "imageUrl": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
                 "type": "string"
               }
             }
@@ -854,7 +879,7 @@
           "EstimatedDuration": {
             "type": "string"
           },
-          "user": {
+          "owner": {
             "type": "string"
           },
           "freelancer": {

@@ -785,7 +785,7 @@
                 "EstimatedDuration": {
                   "type": "string"
                 },
-                "user": {
+                "owner": {
                   "type": "string"
                 },
                 "freelancer": {
