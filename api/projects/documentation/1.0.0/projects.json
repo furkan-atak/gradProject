@@ -820,6 +820,9 @@
               }
             }
           },
+          "detail": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -868,6 +871,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "detail": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

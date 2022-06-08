@@ -803,6 +803,9 @@
                     "type": "string"
                   }
                 },
+                "detail": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },

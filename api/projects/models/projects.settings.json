@@ -50,6 +50,9 @@
       "collection": "freelancers",
       "via": "sendedProposals",
       "dominant": true
+    },
+    "detail": {
+      "type": "string"
     }
   }
 }
