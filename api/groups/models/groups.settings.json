@@ -18,6 +18,12 @@
     "categories": {
       "via": "group",
       "collection": "categories"
+    },
+    "index": {
+      "type": "integer"
+    },
+    "subHeader": {
+      "type": "string"
     }
   }
 }

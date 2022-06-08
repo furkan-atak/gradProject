@@ -592,6 +592,12 @@
                   "type": "string"
                 }
               },
+              "index": {
+                "type": "integer"
+              },
+              "subHeader": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },
