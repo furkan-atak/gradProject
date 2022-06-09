@@ -42,6 +42,9 @@
     },
     "imgUrl": {
       "type": "string"
+    },
+    "offerDescription": {
+      "type": "text"
     }
   }
 }
