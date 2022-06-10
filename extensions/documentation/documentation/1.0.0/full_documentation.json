@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "06/10/2022 12:48:47 AM"
+    "x-generation-date": "06/10/2022 6:59:03 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -9147,6 +9147,9 @@
                 "detail": {
                   "type": "string"
                 },
+                "createdBy": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -10575,6 +10578,78 @@
           "detail": {
             "type": "string"
           },
+          "createdBy": {
+            "required": [
+              "id",
+              "username",
+              "email"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "username": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "password": {
+                "type": "string"
+              },
+              "resetPasswordToken": {
+                "type": "string"
+              },
+              "confirmationToken": {
+                "type": "string"
+              },
+              "confirmed": {
+                "type": "boolean"
+              },
+              "blocked": {
+                "type": "boolean"
+              },
+              "role": {
+                "type": "string"
+              },
+              "favourites": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "purchases": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "job_requests": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "messages": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "imageUrl": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -10625,6 +10700,9 @@
             }
           },
           "detail": {
+            "type": "string"
+          },
+          "createdBy": {
             "type": "string"
           },
           "published_at": {
@@ -10961,16 +11039,44 @@
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "offerHeader"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
-                "price": {
+                "offerHeader": {
+                  "type": "string"
+                },
+                "offerDetails": {
+                  "type": "string"
+                },
+                "fee": {
+                  "type": "number"
+                },
+                "currency": {
                   "type": "integer"
                 },
-                "purchaseDate": {
+                "duration": {
+                  "type": "integer"
+                },
+                "category": {
+                  "type": "string"
+                },
+                "freelancer": {
+                  "type": "string"
+                },
+                "jobs": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "imgUrl": {
+                  "type": "string"
+                },
+                "offerDescription": {
                   "type": "string"
                 },
                 "published_at": {

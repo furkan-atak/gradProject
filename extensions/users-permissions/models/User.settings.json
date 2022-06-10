@@ -63,7 +63,7 @@
       "collection": "favourites"
     },
     "purchases": {
-      "collection": "purchases"
+      "collection": "offers"
     },
     "job_requests": {
       "collection": "job-requests"

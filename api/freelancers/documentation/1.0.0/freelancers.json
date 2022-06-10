@@ -809,6 +809,9 @@
                 "detail": {
                   "type": "string"
                 },
+                "createdBy": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },

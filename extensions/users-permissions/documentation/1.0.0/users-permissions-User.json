@@ -1292,16 +1292,44 @@
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "offerHeader"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
-                "price": {
+                "offerHeader": {
+                  "type": "string"
+                },
+                "offerDetails": {
+                  "type": "string"
+                },
+                "fee": {
+                  "type": "number"
+                },
+                "currency": {
                   "type": "integer"
                 },
-                "purchaseDate": {
+                "duration": {
+                  "type": "integer"
+                },
+                "category": {
+                  "type": "string"
+                },
+                "freelancer": {
+                  "type": "string"
+                },
+                "jobs": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "imgUrl": {
+                  "type": "string"
+                },
+                "offerDescription": {
                   "type": "string"
                 },
                 "published_at": {

@@ -53,6 +53,10 @@
     },
     "detail": {
       "type": "string"
+    },
+    "createdBy": {
+      "plugin": "users-permissions",
+      "model": "user"
     }
   }
 }
