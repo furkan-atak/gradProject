@@ -1,3 +1,3 @@
-# Strapi application
+# Strapi backend for ekmek-cli for freelancer employee and employer website.
 
-A quick description of your strapi application
+
